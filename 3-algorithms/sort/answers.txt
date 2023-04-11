@@ -1,0 +1,12 @@
+sort1 uses: Bubble Sort
+
+How do you know?: When ran on a big file containing numbers that's already sorted, Bubble was faster than Selection Sort.
+
+sort2 uses: Merge Sort
+
+How do you know?: It was the fastest on dealing with "random inputs" among the three sorting algorithms making it unique.
+
+sort3 uses: Selection Sort
+
+How do you know?: When ran on a big file containing numbers that's already sorted, Selection was slower
+that resulted more than double the amount of time compared to Bubble Sort.
