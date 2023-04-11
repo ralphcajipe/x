@@ -1,0 +1,9 @@
+/*
+-- File: 5.sql
+-- Language: sql
+-- Path: songs\5.sql
+In 5.sql, write a SQL query that returns the average energy of all the songs.
+Your query should output a table with a single column and a single row containing the average energy.
+*/
+
+SELECT AVG(energy) FROM songs;
