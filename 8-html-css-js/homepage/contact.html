@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <!-- include Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- include custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar with links to other pages -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Homepage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobby.html">Hobby</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- main content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Contact Me</h1>
+                <p>If you have any questions or just want to say hello, please feel free to contact me using the form
+                    below or through any of the social media links provided.</p>
+                <!-- contact form using Bootstrap styling -->
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Message</label>
+                        <textarea class="form-control" id="messageInput" rows="3"
+                            placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+                <!-- social media links using Bootstrap styling -->
+                <div class="d-flex justify-content-around mt-5">
+                    <a href="https://twitter.com/ralphcode" target="_blank" class="btn btn-outline-primary"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://github.com/ralphcajipe" target="_blank" class="btn btn-outline-primary"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/ralphcajipe/" target="_blank" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

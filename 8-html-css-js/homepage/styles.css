@@ -1,0 +1,63 @@
+/* custom styles for navbar */
+
+/* Add a background color to the navbar */
+.navbar {
+    background-color: #333;
+  }
+
+  /* Change the color of the links in the navbar */
+  .navbar a {
+    color: white;
+  }
+
+  /* Change the color of the links in the navbar when they are hovered over */
+  .navbar a:hover {
+    color: #f1f1f1;
+  }
+
+  /* Change the color of the dropdown menu */
+  .navbar .dropdown-menu {
+    background-color: #333;
+  }
+
+  /* Change the color of the dropdown menu links */
+  .navbar .dropdown-menu a {
+    color: white;
+  }
+
+  /* Change the color of the dropdown menu links when they are hovered over */
+  .navbar .dropdown-menu a:hover {
+    color: #f1f1f1;
+  }
+
+  /* custom styles for homepage */
+  #hello {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #3498db;
+  }
+
+  /* custom styles for about page */
+  #about {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    color: #3498db;
+  }
+
+  /* custom styles for hobby page */
+  #hobby {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #3498db;
+  }
+
+  /* custom styles for contact page */
+  #contact {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #3498db;
+  }

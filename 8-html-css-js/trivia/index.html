@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+        function checkAnswer(button) {
+            if (button.innerHTML === "Paris") {
+                button.style.backgroundColor = "lightgreen";
+                document.getElementById("result").innerHTML = "Correct!";
+            } else {
+                button.style.backgroundColor = "lightcoral";
+                document.getElementById("result").innerHTML = "Incorrect";
+            }
+        }
+
+        function checkFreeResponse() {
+            const answer = document.getElementById("answer").value;
+            if (answer.toLowerCase() === "mount everest" || answer.toLowerCase() === "everest"
+                || answer.toLowerCase() === "mt. everest") {
+                document.getElementById("answer").style.backgroundColor = "lightgreen";
+                document.getElementById("freeResponseResult").innerHTML = "Correct!";
+            } else {
+                document.getElementById("answer").style.backgroundColor = "lightcoral";
+                document.getElementById("freeResponseResult").innerHTML = "Incorrect";
+            }
+        }
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Enter") {
+                checkFreeResponse();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <div class="section">
+
+                <h3>What is the capital of France?</h3>
+                <button id="button1" onclick="checkAnswer(this)">Paris</button>
+                <button id="button2" onclick="checkAnswer(this)">London</button>
+                <button id="button3" onclick="checkAnswer(this)">Berlin</button>
+
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <div class="section">
+
+                <h3>What is the highest mountain in the world?</h3>
+                <input type="text" id="answer" placeholder="Type your answer here">
+                <button onclick="checkFreeResponse()">Check Answer</button>
+
+                <div id="freeResponseResult"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
