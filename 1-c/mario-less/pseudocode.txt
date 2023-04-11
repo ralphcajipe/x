@@ -1,0 +1,13 @@
+Pseudocode for mario.c
+
+1    Prompt user for height
+2    If height is less than 1 or greater than 8
+         Go back to step 1
+     Else if not an integer at all
+         Go back to step 1
+3    Else
+        Iterate from 1 (i) through height:
+            3.1    On iteration j, print j spaces
+            3.2    On iteration k, print k hashes
+            3.3    and then print a new line to move to next row
+4    End
